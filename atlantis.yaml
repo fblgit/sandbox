@@ -5,7 +5,6 @@ projects:
 - name: my-project-name
   dir: test
   workspace: default
-  autoversion: true
   autoplan:
     when_modified: ["*.tf", "../modules/**.tf"]
     enabled: true
