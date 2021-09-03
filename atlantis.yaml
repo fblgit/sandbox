@@ -8,3 +8,9 @@ projects:
   autoplan:
     when_modified: ["*.tf", "../modules/**.tf"]
     enabled: true
+- name: my-other-project
+  dir: test2
+  workspace: default
+  autoplan:
+    when_modified: ["*.tf", "../modules/**.tf"]
+    enabled: true
