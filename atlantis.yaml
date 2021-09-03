@@ -1,0 +1,17 @@
+version: 3
+automerge: false
+delete_source_branch_on_merge: true
+parallel_plan: true
+projects:
+- name: my-project-name
+  dir: test
+  workspace: default
+  autoplan:
+    when_modified: ["*.tf", "../modules/**.tf"]
+    enabled: true
+- name: my-other-project
+  dir: test2
+  workspace: default
+  autoplan:
+    when_modified: ["*.tf", "../modules/**.tf"]
+    enabled: true
